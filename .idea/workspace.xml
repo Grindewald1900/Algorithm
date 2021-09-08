@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4b93024-c6a5-4a0e-b553-9a38ffe22701" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rX9mAbDZxDT9FFhYBTySnR2WDW" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Kotlin.StringKt">
+    <configuration name="AlgoKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="KotlinTest.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="AlgoKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="KotlinTest.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="GraphKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="KotlinTest.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="KotlinTest.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="StringKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.StringKt" />
+        <item itemvalue="Kotlin.GraphKt" />
+        <item itemvalue="Kotlin.AlgoKt" />
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4b93024-c6a5-4a0e-b553-9a38ffe22701" name="Default Changelist" comment="" />
+      <created>1619111724111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619111724111</updated>
+      <workItem from="1619111727344" duration="14583000" />
+      <workItem from="1619180272230" duration="3242000" />
+      <workItem from="1619330785770" duration="2444000" />
+      <workItem from="1619371513538" duration="10805000" />
+      <workItem from="1619403417914" duration="2000" />
+      <workItem from="1619454030575" duration="17535000" />
+      <workItem from="1619635986456" duration="8898000" />
+      <workItem from="1619666731326" duration="6841000" />
+      <workItem from="1619714505637" duration="17157000" />
+      <workItem from="1619805053352" duration="6614000" />
+      <workItem from="1619887864670" duration="2068000" />
+      <workItem from="1619979971656" duration="889000" />
+      <workItem from="1620064519284" duration="4481000" />
+      <workItem from="1620247912942" duration="706000" />
+      <workItem from="1620435151147" duration="810000" />
+      <workItem from="1620611571972" duration="1211000" />
+      <workItem from="1625665056453" duration="4776000" />
+      <workItem from="1625754726251" duration="5141000" />
+      <workItem from="1625836479009" duration="7373000" />
+      <workItem from="1626015577812" duration="5979000" />
+      <workItem from="1626185756787" duration="602000" />
+      <workItem from="1626273184048" duration="6517000" />
+      <workItem from="1626355633409" duration="4141000" />
+      <workItem from="1626448931320" duration="3983000" />
+      <workItem from="1626531919699" duration="1875000" />
+      <workItem from="1626617510591" duration="601000" />
+      <workItem from="1626790132642" duration="7960000" />
+      <workItem from="1626880060339" duration="6110000" />
+      <workItem from="1626957740348" duration="7439000" />
+      <workItem from="1627051890085" duration="6220000" />
+      <workItem from="1627141790778" duration="2824000" />
+      <workItem from="1627220437294" duration="3081000" />
+      <workItem from="1627392714640" duration="1199000" />
+      <workItem from="1627478624153" duration="2868000" />
+      <workItem from="1627524761881" duration="1137000" />
+      <workItem from="1627565454782" duration="5689000" />
+      <workItem from="1627656623070" duration="5210000" />
+      <workItem from="1627739763887" duration="2398000" />
+      <workItem from="1628176883656" duration="615000" />
+      <workItem from="1629043233350" duration="1199000" />
+      <workItem from="1629296779483" duration="1199000" />
+      <workItem from="1630184579916" duration="2285000" />
+      <workItem from="1630265667605" duration="3590000" />
+      <workItem from="1630441624228" duration="5266000" />
+      <workItem from="1630512670488" duration="6251000" />
+      <workItem from="1630596324399" duration="9120000" />
+      <workItem from="1631058185414" duration="4816000" />
+      <workItem from="1631106570170" duration="7253000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2137" y="618" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1627234515158">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state x="2137" y="618" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1627234515158" />
+    <state x="2212" y="809" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1627234191252">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state x="2212" y="809" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1627234191252" />
+    <state width="1037" height="610" key="GridCell.Tab.0.bottom" timestamp="1631117328470">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="430" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1080.1920/-1600.0.1600.1200@1920.0.1080.1920" timestamp="1626408680475" />
+    <state width="1037" height="610" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631117328470" />
+    <state width="1037" height="406" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.9.1080.1920@1920.9.1080.1920" timestamp="1626968413924" />
+    <state width="1037" height="610" key="GridCell.Tab.0.center" timestamp="1631117328470">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="430" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1080.1920/-1600.0.1600.1200@1920.0.1080.1920" timestamp="1626408680475" />
+    <state width="1037" height="610" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631117328470" />
+    <state width="1037" height="406" key="GridCell.Tab.0.center/0.0.1920.1080/1920.9.1080.1920@1920.9.1080.1920" timestamp="1626968413923" />
+    <state width="1037" height="610" key="GridCell.Tab.0.left" timestamp="1631117328470">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="430" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1080.1920/-1600.0.1600.1200@1920.0.1080.1920" timestamp="1626408680474" />
+    <state width="1037" height="610" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631117328470" />
+    <state width="1037" height="406" key="GridCell.Tab.0.left/0.0.1920.1080/1920.9.1080.1920@1920.9.1080.1920" timestamp="1626968413923" />
+    <state width="1037" height="610" key="GridCell.Tab.0.right" timestamp="1631117328470">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="430" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1080.1920/-1600.0.1600.1200@1920.0.1080.1920" timestamp="1626408680475" />
+    <state width="1037" height="610" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631117328470" />
+    <state width="1037" height="406" key="GridCell.Tab.0.right/0.0.1920.1080/1920.9.1080.1920@1920.9.1080.1920" timestamp="1626968413924" />
+    <state width="1037" height="610" key="GridCell.Tab.1.bottom" timestamp="1631117328470">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="610" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631117328470" />
+    <state width="1037" height="610" key="GridCell.Tab.1.center" timestamp="1631117328470">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="610" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631117328470" />
+    <state width="1037" height="610" key="GridCell.Tab.1.left" timestamp="1631117328470">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="610" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631117328470" />
+    <state width="1037" height="610" key="GridCell.Tab.1.right" timestamp="1631117328470">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="610" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631117328470" />
+    <state x="2137" y="551" key="com.intellij.ide.util.TipDialog" timestamp="1631111018695">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state x="2131" y="784" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1080.1920@0.0.1920.1080" timestamp="1627524769021" />
+    <state x="2137" y="551" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631111018695" />
+    <state x="2131" y="793" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.9.1080.1920@1920.9.1080.1920" timestamp="1626958376091" />
+    <state x="2247" y="639" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1631059233703">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state x="2247" y="639" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1631059233702" />
+    <state x="608" y="0" width="858" height="1167" maximized="true" key="dock-window-1" timestamp="1625754803112">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="608" y="0" width="858" height="1167" maximized="true" key="dock-window-1/0.0.1920.1080/1920.0.1080.1920/3000.0.1600.1200@1920.0.1080.1920" timestamp="1625714970904" />
+    <state x="2116" y="460" key="run.anything.popup" timestamp="1630444682094">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state x="2116" y="460" key="run.anything.popup/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1630444682094" />
+    <state x="2123" y="445" width="672" height="678" key="search.everywhere.popup" timestamp="1627569786282">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state x="2123" y="445" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1080.1920@1920.0.1080.1920" timestamp="1627569786282" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>816</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>694</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>689</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>703</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>712</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>721</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>416</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>426</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>415</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>399</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>368</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>370</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>365</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>247</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>265</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>239</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Algo.kt</url>
+          <line>165</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Graph.kt</url>
+          <line>273</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Graph.kt</url>
+          <line>189</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Graph.kt</url>
+          <line>166</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Graph.kt</url>
+          <line>145</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Graph.kt</url>
+          <line>146</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Graph.kt</url>
+          <line>75</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/String.kt</url>
+          <line>55</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
