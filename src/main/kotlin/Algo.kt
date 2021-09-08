@@ -5,32 +5,26 @@ import kotlin.math.min
 
 
 fun main(args: Array<String>) {
-//    val result = sortedSquaredArray(arrayListOf(-2, -1, 1, 3, 4))
-//    val result = threeNumberSum(mutableListOf(1,2,3),
-//    val result = longestPeak(listOf(1, 2, 3, 4, 5, 1))
-//    var result = fourNumberSum(mutableListOf(7, 6, 4, -1, 1, 2), 16)
-//    val result = minRewards(listOf(8, 4, 2, 1, 3, 6, 7, 9, 5))
-//    val result = zigzagTraverse(listOf(listOf(1, 3, 4, 10), listOf(2, 5, 9, 11), listOf(6, 8, 12, 15), listOf(7, 13, 14, 16)))
 
 /** BST data**/
-//    val tree = BinaryTree(1)
-//    tree.left = BinaryTree(2)
-//    tree.left!!.left = BinaryTree(4)
-//    tree.left!!.right = BinaryTree(5)
-//    tree.left!!.left!!.left = BinaryTree(8)
-//    tree.left!!.left!!.right = BinaryTree(9)
-//    tree.left!!.right!!.left = BinaryTree(10)
-//    tree.right = BinaryTree(3)
-//    tree.right!!.right = BinaryTree(7)
-//    tree.right!!.left = BinaryTree(6)
-//    tree.right!!.left!!.right = BinaryTree(11)
-//    tree.right!!.left!!.right!!.right = BinaryTree(16)
-//    tree.right!!.left!!.right!!.left = BinaryTree(15)
-//    tree.right!!.left!!.right!!.left!!.right = BinaryTree(17)
-//    tree.right!!.left!!.right!!.left!!.right!!.right = BinaryTree(18)
-//    tree.right!!.left!!.right!!.left!!.right!!.right!!.right = BinaryTree(19)
-//    tree.right!!.left!!.right!!.left!!.right!!.right!!.right!!.left = BinaryTree(20)
-//    tree.right!!.left!!.right!!.left!!.right!!.right!!.right!!.left!!.left = BinaryTree(21)
+    val tree = BinaryTree(1)
+    tree.left = BinaryTree(2)
+    tree.left!!.left = BinaryTree(4)
+    tree.left!!.right = BinaryTree(5)
+    tree.left!!.left!!.left = BinaryTree(8)
+    tree.left!!.left!!.right = BinaryTree(9)
+    tree.left!!.right!!.left = BinaryTree(10)
+    tree.right = BinaryTree(3)
+    tree.right!!.right = BinaryTree(7)
+    tree.right!!.left = BinaryTree(6)
+    tree.right!!.left!!.right = BinaryTree(11)
+    tree.right!!.left!!.right!!.right = BinaryTree(16)
+    tree.right!!.left!!.right!!.left = BinaryTree(15)
+    tree.right!!.left!!.right!!.left!!.right = BinaryTree(17)
+    tree.right!!.left!!.right!!.left!!.right!!.right = BinaryTree(18)
+    tree.right!!.left!!.right!!.left!!.right!!.right!!.right = BinaryTree(19)
+    tree.right!!.left!!.right!!.left!!.right!!.right!!.right!!.left = BinaryTree(20)
+    tree.right!!.left!!.right!!.left!!.right!!.right!!.right!!.left!!.left = BinaryTree(21)
 
 
     print("")
@@ -72,11 +66,6 @@ fun getMaxSum(node: BinaryTree): Int{
     }
     val tempMaxSum = max(0, maxLeft) + max(0, maxRight) + node.value
     if(tempMaxSum > maxSum) maxSum = tempMaxSum
-    print("Value: ${node.value} \n")
-    print("Left: $maxLeft \n")
-    print("Right: $maxRight \n")
-    print("temp: $tempMaxSum\n")
-    print("Sum: $maxSum \n\n")
     // Return
     return if(node.left == null && node.right == null) node.value
     else max(maxLeft, maxRight) + node.value
@@ -107,20 +96,6 @@ fun findNodeByValue(tree: BinaryTree, value: Int): BinaryTree?{
     }
     return result
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 var isBalance = true

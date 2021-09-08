@@ -4,38 +4,6 @@ import kotlin.math.abs
 import kotlin.math.max
 import kotlin.math.min
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 fun main(args: Array<String>) {
     val input = mutableListOf(
         mutableListOf(1),
@@ -114,19 +82,6 @@ fun changeValue(i: Int,j: Int){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** Graph Question-7 **/
 var size = 0
 var isCycle = false
@@ -157,48 +112,48 @@ fun ifCycle(vertex: Int, target: Int, level: Int, edges: List<List<Int>>){
 //lateinit var mMatrix: List<MutableList<Int>>
 //var height = 0
 //var width = 0
-//fun removeIslands(matrix: List<MutableList<Int>>): List<MutableList<Int>> {
-//    // Write your code here.
+fun removeIslands(matrix: List<MutableList<Int>>): List<MutableList<Int>> {
+    // Write your code here.
 //    mMatrix = matrix
-//    height = matrix.size
-//    width = matrix[0].size
-//
-//    for(i in 0 until width){
-//        labelLand(0, i)
-//        labelLand(height-1, i)
-//    }
-//    for(i in 0 until height){
-//        labelLand(i, 0)
-//        labelLand(i, width-1)
-//    }
-//
-//    for(i in 0 until height){
-//        for(j in 0 until width){
-//            if(mMatrix[i][j] == 1)
-//                mMatrix[i][j] = 0
-//            if(mMatrix[i][j] == 2)
-//                mMatrix[i][j] = 1
-//
-//        }
-//    }
-//
-//    return matrix
-//}
-//
-//fun labelLand(i: Int, j: Int){
-//    print("Position: x: $i , y: $j \n")
-//    if(mMatrix[i][j] == 1){
-//        mMatrix[i][j] = 2
-//        if(i > 0)
-//            labelLand(i - 1, j)
-//        if(i < height-1)
-//            labelLand(i + 1, j)
-//        if(j > 0)
-//            labelLand(i, j - 1)
-//        if(j < width-1)
-//            labelLand(i, j + 1)
-//    }
-//}
+    height = matrix.size
+    width = matrix[0].size
+
+    for(i in 0 until width){
+        labelLand(0, i)
+        labelLand(height-1, i)
+    }
+    for(i in 0 until height){
+        labelLand(i, 0)
+        labelLand(i, width-1)
+    }
+
+    for(i in 0 until height){
+        for(j in 0 until width){
+            if(mMatrix[i][j] == 1)
+                mMatrix[i][j] = 0
+            if(mMatrix[i][j] == 2)
+                mMatrix[i][j] = 1
+
+        }
+    }
+
+    return matrix
+}
+
+fun labelLand(i: Int, j: Int){
+    print("Position: x: $i , y: $j \n")
+    if(mMatrix[i][j] == 1){
+        mMatrix[i][j] = 2
+        if(i > 0)
+            labelLand(i - 1, j)
+        if(i < height-1)
+            labelLand(i + 1, j)
+        if(j > 0)
+            labelLand(i, j - 1)
+        if(j < width-1)
+            labelLand(i, j + 1)
+    }
+}
 
 
 /** Graph Question-4 **/
@@ -207,56 +162,56 @@ fun ifCycle(vertex: Int, target: Int, level: Int, edges: List<List<Int>>){
 //var height = 0
 //var width = 0
 
-//fun riverSizes(matrix: List<List<Int>>): List<Int> {
-//    // Write your code here.
-//    val result: MutableList<Int> = mutableListOf()
-//    height = matrix.size
-//    width = matrix[0].size
-//    mMatrix.clear()
-//    size = 0
-//
-//    for (i in 0 until height){
-//        mMatrix.add(ArrayList(matrix[i]))
-//    }
-//
-//    for (i in 0 until height){
-//        for (j in 0 until width){
-//            size = 0
-//            if (mMatrix[i][j] == 1){
-//                size++
-//                mMatrix[i][j] = 0
-//                ifNeighbourRiver(i, j)
-//            }
-//            if(size > 0){
-//                result.add(size)
-//            }
-//        }
-//    }
-//    return result
-//}
+fun riverSizes(matrix: List<List<Int>>): List<Int> {
+    // Write your code here.
+    val result: MutableList<Int> = mutableListOf()
+    height = matrix.size
+    width = matrix[0].size
+    mMatrix.clear()
+    size = 0
 
-//fun ifNeighbourRiver(i: Int, j: Int){
-//    if(j < width-1 && mMatrix[i][j+1] == 1){
-//        size++
-//        mMatrix[i][j+1] = 0
-//        ifNeighbourRiver(i, j+1)
-//    }
-//    if(i < height-1 && mMatrix[i+1][j] == 1){
-//        size++
-//        mMatrix[i+1][j] = 0
-//        ifNeighbourRiver(i+1, j)
-//    }
-//    if(j > 0 && mMatrix[i][j-1] == 1){
-//        size++
-//        mMatrix[i][j-1] = 0
-//        ifNeighbourRiver(i, j-1)
-//    }
-//    if(i > 0 && mMatrix[i-1][j] == 1){
-//        size++
-//        mMatrix[i-1][j] = 0
-//        ifNeighbourRiver(i-1, j)
-//    }
-//}
+    for (i in 0 until height){
+        mMatrix.add(ArrayList(matrix[i]))
+    }
+
+    for (i in 0 until height){
+        for (j in 0 until width){
+            size = 0
+            if (mMatrix[i][j] == 1){
+                size++
+                mMatrix[i][j] = 0
+                ifNeighbourRiver(i, j)
+            }
+            if(size > 0){
+                result.add(size)
+            }
+        }
+    }
+    return result
+}
+
+fun ifNeighbourRiver(i: Int, j: Int){
+    if(j < width-1 && mMatrix[i][j+1] == 1){
+        size++
+        mMatrix[i][j+1] = 0
+        ifNeighbourRiver(i, j+1)
+    }
+    if(i < height-1 && mMatrix[i+1][j] == 1){
+        size++
+        mMatrix[i+1][j] = 0
+        ifNeighbourRiver(i+1, j)
+    }
+    if(j > 0 && mMatrix[i][j-1] == 1){
+        size++
+        mMatrix[i][j-1] = 0
+        ifNeighbourRiver(i, j-1)
+    }
+    if(i > 0 && mMatrix[i-1][j] == 1){
+        size++
+        mMatrix[i-1][j] = 0
+        ifNeighbourRiver(i-1, j)
+    }
+}
 
 
 /** Graph Question-1 **/
