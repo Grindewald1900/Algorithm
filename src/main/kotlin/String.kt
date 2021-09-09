@@ -6,30 +6,83 @@
 
 
 fun main(){
-    println(longestPalindromicSubstring("a"))
+    reverseWordsInString("AlgoExpert is the best!")
 }
 
-/** Question-6 **/
-fun longestPalindromicSubstring(string: String): String {
+/** Question-9 **/
+fun reverseWordsInString(string: String): String {
     // Write your code here.
-    var maxString = ""
-    if(string.length == 1) return string
+    var stringList = mutableListOf<String>()
+    var spaceList = mutableListOf<String>()
+    var tempString = ""
+    var result = ""
+    var isSpace = false
 
     for (i in string.indices){
-        println("i $i")
-        for (j in string.lastIndex downTo  i + 1){
-//            println("i $i, j $j")
-            if (isPalindromic(i, j, string)){
-                if (j - i > maxString.length){
-                    maxString = string.substring(i, j+1)
+        if (string[i] == ' '){
+            if (!isSpace){
+                stringList.add(tempString)
+                tempString = ""
+            }
+            isSpace = true
+            tempString += " "
+        }else{
+            if (isSpace){
+                spaceList.add(tempString)
+                tempString = ""
+            }
+            isSpace = false
+            tempString += string[i]
+        }
+    }
+    if (isSpace)
+        spaceList.add(tempString)
+    else
+        stringList.add(tempString)
+    for (i in stringList.indices.reversed()){
+        if (i < spaceList.size )
+            result += spaceList[i]
+        result += stringList[i]
+
+    }
+    return result
+}
+
+
+
+
+/** Question-8 **/
+fun validIPAddresses(string: String): List<String> {
+    // Write your code here.
+    val size = string.length
+    var result = mutableListOf<String>()
+    if (size < 4 || size > 12) return listOf()
+
+    for (i in 1 until size - 2){
+        for (j in i+1 until size - 1){
+            for(k in j+1 until size){
+                if (i > 3 || j - i > 3 || k - j > 3 || size - k > 3) {
+                    continue
+                }else if (string[0] == '0' && i > 1){
+                    continue
+                }else if (string[i] == '0' && j - i > 1){
+                    continue
+                }else if (string[j] == '0' && k - j > 1){
+                    continue
+                }else if (string[k] == '0' && size - k > 1){
+                    continue
+                }else if(string.substring(0,i).toInt() > 255 || string.substring(i,j).toInt() > 255 || string.substring(j,k).toInt() > 255 || string.substring(k,size).toInt() > 255){
+                    continue
                 }
-                break
+                result.add("${string.substring(0,i)}.${string.substring(i,j)}.${string.substring(j,k)}.${string.substring(k,size)}")
             }
         }
     }
-    return maxString
+    return result
 }
 
+
+/** Question-6 **/
 fun isPalindromic(start: Int, end:Int, string: String): Boolean{
     var startIndex = start
     var endIndex = end
