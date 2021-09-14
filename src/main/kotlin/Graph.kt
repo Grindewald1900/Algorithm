@@ -215,10 +215,10 @@ fun ifNeighbourRiver(i: Int, j: Int){
 
 
 /** Graph Question-1 **/
-class Node(name: String) {
+class GraphNode(name: String) {
     val name: String = name
-    val children = mutableListOf<Node>()
-    val stack = Stack<Node>()
+    val children = mutableListOf<GraphNode>()
+    val stack = Stack<GraphNode>()
     fun depthFirstSearch(): List<String> {
         // Write your code here.
         val list = mutableListOf<String>()
