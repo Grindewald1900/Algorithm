@@ -5,8 +5,27 @@
  * **/
 
 fun main(){
-    val list = removeDuplicatesFromLinkedList(addMany(LinkedList(1), listOf(1, 3, 4, 4, 4, 5, 6, 6)))
-    println(getNodesInArray(list))
+//    val list = removeDuplicatesFromLinkedList(addMany(LinkedList(1), listOf(1, 3, 4, 4, 4, 5, 6, 6)))
+//    println(getNodesInArray(list))
+    val linkedList = DoublyLinkedList()
+
+    val one = Node(1)
+    val two = Node(2)
+    val three = Node(3)
+    val three2 = Node(3)
+    val three3 = Node(3)
+    val four = Node(4)
+    val five = Node(5)
+    val six = Node(6)
+
+    linkedList.setHead(one)
+    linkedList.insertAfter(one, two)
+    linkedList.insertAfter(two, three)
+    linkedList.insertAfter(three, four)
+    linkedList.insertAfter(four, five)
+
+    linkedList.setHead(four)
+    println(headToTail(linkedList))
 }
 
 fun addMany(linkedList: LinkedList, values: List<Int>): LinkedList {
@@ -29,6 +48,16 @@ fun getNodesInArray(linkedList: LinkedList?): List<Int> {
         current = current.next
     }
     return nodes
+}
+
+fun headToTail(dll: DoublyLinkedList): List<Int> {
+    val values = mutableListOf<Int>()
+    var current: Node? = dll.getHead()
+    while (current != null) {
+        values.add(current.value)
+        current = current.next
+    }
+    return values
 }
 
 /** Question-2 **/
