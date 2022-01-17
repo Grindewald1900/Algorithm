@@ -5,8 +5,6 @@
  * **/
 
 fun main(){
-//    val list = removeDuplicatesFromLinkedList(addMany(LinkedList(1), listOf(1, 3, 4, 4, 4, 5, 6, 6)))
-//    println(getNodesInArray(list))
     val linkedList = DoublyLinkedList()
 
     val one = Node(1)
@@ -25,9 +23,12 @@ fun main(){
     linkedList.insertAfter(four, five)
 
     linkedList.setHead(four)
-    println(headToTail(linkedList))
+    linkedList.setTail(six)
+    linkedList.insertBefore(six, three)
+    linkedList.insertAfter(six, three2)
 }
 
+/** Public functions **/
 fun addMany(linkedList: LinkedList, values: List<Int>): LinkedList {
     var current = linkedList
     while (current.next != null) {
@@ -50,14 +51,22 @@ fun getNodesInArray(linkedList: LinkedList?): List<Int> {
     return nodes
 }
 
-fun headToTail(dll: DoublyLinkedList): List<Int> {
-    val values = mutableListOf<Int>()
-    var current: Node? = dll.getHead()
-    while (current != null) {
-        values.add(current.value)
-        current = current.next
+
+/** Question-3 **/
+fun removeKthNodeFromEnd(head: LinkedList, k: Int) {
+    var node = head
+    var count = 1
+    while (node.next != null){
+        node = node.next!!
+        count ++
     }
-    return values
+    node = head
+    for (i in 1 .. count - k){
+        node = node.next!!
+    }
+    if (node.next != null){
+        
+    }
 }
 
 /** Question-2 **/
@@ -66,6 +75,8 @@ class Node(value: Int) {
     var prev: Node? = null
     var next: Node? = null
 }
+
+
 class DoublyLinkedList {
     private var head: Node? = null
     private var tail: Node? = null
@@ -91,24 +102,22 @@ class DoublyLinkedList {
         if (node.prev != null){
             node.prev!!.next = nodeToInsert
             nodeToInsert.prev = node.prev
+        }else{
+            head = nodeToInsert
         }
         node.prev = nodeToInsert
         nodeToInsert.next = node
-        if(nodeToInsert.prev == null){
-            head = nodeToInsert
-        }
     }
 
     fun insertAfter(node: Node, nodeToInsert: Node) {
         if (node.next != null){
             node.next!!.prev = nodeToInsert
             nodeToInsert.next = node.next
+        }else{
+            tail = nodeToInsert
         }
         node.next = nodeToInsert
         nodeToInsert.prev = node
-        if(nodeToInsert.next == null){
-            tail = nodeToInsert
-        }
     }
 
     fun insertAtPosition(position: Int, nodeToInsert: Node) {
@@ -171,6 +180,7 @@ class DoublyLinkedList {
 
     fun getTail(): Node? { return this.tail }
 }
+
 
 /** Question-1 **/
 // This is an input class. Do not edit.

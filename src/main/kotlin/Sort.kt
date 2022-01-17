@@ -5,11 +5,9 @@
  * **/
 
 fun main(){
-//    println(bubbleSort(mutableListOf(8, 5, 2, 9, 5, 6, 3)))
-//    println(insertionSort(mutableListOf(8, 5, 2, 9, 5, 6, 3)))
-//    println(selectionSort(mutableListOf(8, 5, 2, 9, 5, 6, 3)))
     println(threeNumberSort(mutableListOf(-2, -2, -2, -3, -3, -3, -3, -3, -3), mutableListOf(-2, -3, 0)))
 }
+
 /** Question-4 Solution 2 **/
 fun threeNumberSort(array: MutableList<Int>, order: List<Int>): List<Int> {
     val orderCount = mutableListOf<Int>(0, 0, 0)
