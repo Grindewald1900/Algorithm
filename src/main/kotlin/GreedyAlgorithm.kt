@@ -4,9 +4,11 @@ import kotlin.math.min
 
 fun main(){
     val list = mutableListOf(3,2,1,2,6)
-    val result = taskAssignment(3, listOf(1, 3, 5, 3, 1, 4))
+    val result = numberOfWaysToTraverseGraph(3, 4)
     println(result)
 }
+
+
 
 
 

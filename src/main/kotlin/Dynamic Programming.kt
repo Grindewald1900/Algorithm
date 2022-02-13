@@ -1,3 +1,4 @@
+import java.lang.StringBuilder
 import kotlin.math.max
 import kotlin.math.min
 
@@ -7,19 +8,124 @@ import kotlin.math.min
  * 1. Remove duplicates from linked list
  * **/
 
-
 fun main(){
     val array = listOf(2, 1)
-    val result = minNumberOfCoinsForChange(3, array)
-    println(result)
+//    val result = maxSumIncreasingSubsequence(listOf(-5, -4, -3, -2, -1))
+//    println(result)
+    test()
+
+}
+
+
+fun test(){
+    val a = "aa"
+    val b = "aa"
+    val c = String(StringBuilder("aa"))
+
+    println(a.hashCode())
+    println(b.hashCode())
+    println(c.hashCode())
+    val car = arrayOf("A", "B")
+    val list = listOf("A", "B")
+}
+
+/**
+ * Question 7
+ */
+fun longestCommonSubsequence(str1: String, str2: String): List<Char> {
+    val result = String()
+    var tempStrOne: String = String()
+    var tempStrTwo: String = String()
+    val size = min(str1.length, str2.length)
+    if (size == 0) return listOf()
+
+    for (i in 0 until size){
+        val tempCharOne = str1[i]
+        val tempCharTwo = str2[i]
+        tempStrOne.plus(tempCharOne)
+        tempStrTwo.plus(tempCharTwo)
+        if (tempStrTwo.contains(tempCharOne)){
+            val index = tempStrTwo.indexOf(tempCharOne)
+            tempStrOne = ""
+            tempStrTwo = str2.substring(index+1, i+1)
+            result.plus(tempCharOne)
+        }
+        if (tempStrOne.contains(tempCharTwo)){
+            val index = tempStrOne.indexOf(tempCharTwo)
+            tempStrTwo = ""
+            tempStrOne = str2.substring(index+1, i+1)
+            result.plus(tempCharTwo)
+        }
+    }
+    return listOf()
 }
 
 
 /**
- * Question 4
+ * Question 6
  */
+
+fun maxSumIncreasingSubsequence(array: List<Int>): Pair<Int, List<Int>> {
+    var maxIndex = 0
+    var maxSum = Int.MIN_VALUE
+    val sumArray = MutableList(array.size){index -> array[index]}
+    // The last index: like {2, 3, 5}, sequence{-1, 0, 1}
+    val sequence = MutableList(array.size){ -1}
+
+    for (i in array.indices){
+        val tempItem = array[i]
+        for(j in 0 until i){
+            if (array[j] < tempItem && sumArray[j] + tempItem >= sumArray[i]){
+                sumArray[i] = sumArray[j] + tempItem
+                sequence[i] = j
+            }
+        }
+        if(sumArray[i] > maxSum){
+            maxSum = sumArray[i]
+            maxIndex = i
+        }
+    }
+
+    var tempIndex = maxIndex
+    val resultArray = mutableListOf<Int>()
+
+    if(sequence[tempIndex] < 0){
+        return Pair(array[maxIndex], listOf(array[maxIndex]))
+    }
+    while (tempIndex >= 0){
+        resultArray.add(0, array[tempIndex])
+        tempIndex = sequence[tempIndex]
+    }
+    return Pair(resultArray.sum(), resultArray)
+}
+
+
 /**
- * Question 3
+ * Question 5
+ */
+fun numberOfWaysToTraverseGraph(width: Int, height: Int): Int {
+    /**
+     * Example: 3*4
+     * we have 2 right steps and 3 down steps
+     * so totally 2 + 3 = 5
+     */
+    if (width == 1 && height == 1){
+        return 0
+    }
+    val sum = width + height - 2
+    val result = factorial(sum) / (factorial(width - 1) * factorial(height - 1))
+    return result
+}
+
+fun factorial(number: Int): Int{
+    var fac = 1
+    for (i in 1..number){
+        fac *= i
+    }
+    return fac
+}
+/**
+ * Question 4
  */
 fun levenshteinDistance(str1: String, str2: String): Int {
     /** Example:
