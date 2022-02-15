@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4b93024-c6a5-4a0e-b553-9a38ffe22701" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/BST.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Test.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,11 +22,7 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
@@ -77,8 +73,7 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Dynamic Programming.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Dynamic Programming.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/GreedyAlgorithm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/GreedyAlgorithm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BST.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,9 +214,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="KotlinTest.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="TestKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.BSTKt" />
+        <item itemvalue="Kotlin.TestKt" />
         <item itemvalue="Kotlin.Dynamic_ProgrammingKt" />
         <item itemvalue="Kotlin.GreedyAlgorithmKt" />
         <item itemvalue="Kotlin.GPACalculatorKt" />
@@ -306,7 +315,8 @@
       <workItem from="1644612878034" duration="3273000" />
       <workItem from="1644681369302" duration="6524000" />
       <workItem from="1644704542951" duration="8477000" />
-      <workItem from="1644774027123" duration="934000" />
+      <workItem from="1644774027123" duration="9235000" />
+      <workItem from="1644941605014" duration="11336000" />
     </task>
     <task id="LOCAL-00001" summary="[Update] Daily update">
       <created>1631140580046</created>
@@ -350,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642386323188</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[Update] Daily update">
+      <created>1644775072217</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644775072217</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,46 +403,50 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="708" y="386" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1642269268999" />
-    <state x="536" y="132" key="CommitChangelistDialog2" timestamp="1642386321420">
+    <state x="734" y="190" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1644788882770">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="536" y="132" key="CommitChangelistDialog2/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1642386321420" />
+    <state x="734" y="190" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644788882770" />
+    <state x="536" y="132" key="CommitChangelistDialog2" timestamp="1644775070126">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="536" y="132" key="CommitChangelistDialog2/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644775070126" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1642268545545">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1642268545545" />
-    <state width="1877" height="368" key="GridCell.Tab.0.bottom" timestamp="1644774947307">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom" timestamp="1644963760786">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644774947307" />
-    <state width="1877" height="368" key="GridCell.Tab.0.center" timestamp="1644774947307">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644963760786" />
+    <state width="1877" height="215" key="GridCell.Tab.0.center" timestamp="1644963760786">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.center/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644774947307" />
-    <state width="1877" height="368" key="GridCell.Tab.0.left" timestamp="1644774947306">
+    <state width="1877" height="215" key="GridCell.Tab.0.center/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644963760786" />
+    <state width="1877" height="215" key="GridCell.Tab.0.left" timestamp="1644963760786">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.left/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644774947306" />
-    <state width="1877" height="368" key="GridCell.Tab.0.right" timestamp="1644774947307">
+    <state width="1877" height="215" key="GridCell.Tab.0.left/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644963760786" />
+    <state width="1877" height="215" key="GridCell.Tab.0.right" timestamp="1644963760786">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.right/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644774947307" />
-    <state width="1877" height="44" key="GridCell.Tab.1.bottom" timestamp="1642562616031">
+    <state width="1877" height="215" key="GridCell.Tab.0.right/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644963760786" />
+    <state width="1877" height="215" key="GridCell.Tab.1.bottom" timestamp="1644963760787">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="44" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1642562616031" />
-    <state width="1877" height="44" key="GridCell.Tab.1.center" timestamp="1642562616031">
+    <state width="1877" height="215" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644963760787" />
+    <state width="1877" height="215" key="GridCell.Tab.1.center" timestamp="1644963760786">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="44" key="GridCell.Tab.1.center/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1642562616031" />
-    <state width="1877" height="44" key="GridCell.Tab.1.left" timestamp="1642562616030">
+    <state width="1877" height="215" key="GridCell.Tab.1.center/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644963760786" />
+    <state width="1877" height="215" key="GridCell.Tab.1.left" timestamp="1644963760786">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="44" key="GridCell.Tab.1.left/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1642562616030" />
-    <state width="1877" height="44" key="GridCell.Tab.1.right" timestamp="1642562616031">
+    <state width="1877" height="215" key="GridCell.Tab.1.left/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644963760786" />
+    <state width="1877" height="215" key="GridCell.Tab.1.right" timestamp="1644963760787">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="44" key="GridCell.Tab.1.right/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1642562616031" />
+    <state width="1877" height="215" key="GridCell.Tab.1.right/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644963760787" />
     <state x="662" y="255" key="MultipleFileMergeDialog" timestamp="1642386347577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -434,15 +455,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="453" y="181" key="SettingsEditor/0.0.1920.1080/1920.0.1080.1920@0.0.1920.1080" timestamp="1637527939997" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1642386368511">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1644775077145">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1642386368511" />
-    <state x="375" y="441" key="com.intellij.ide.util.TipDialog" timestamp="1644774028067">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644775077145" />
+    <state x="375" y="441" key="com.intellij.ide.util.TipDialog" timestamp="1644941620886">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="375" y="441" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1080.1920@0.0.1920.1080" timestamp="1637527920462" />
-    <state x="375" y="441" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644774028067" />
+    <state x="375" y="441" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.294.1080.1920@0.0.1920.1080" timestamp="1644941620886" />
     <state x="752" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1642386360636">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -622,6 +643,16 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/GreedyAlgorithm.kt</url>
           <line>27</line>
           <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/BST.kt</url>
+          <line>163</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/BST.kt</url>
+          <line>56</line>
+          <option name="timeStamp" value="121" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

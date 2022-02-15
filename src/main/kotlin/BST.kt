@@ -23,29 +23,236 @@ open class BST(value: Int) {
     }
 }
 
+
+
+
+fun TestCase1() {
+    val array = listOf(8, 5, 11, -1, 3, 4, 2)
+    println(rightSmallerThan(array))
+}
+
 fun main(){
     TestCase1()
 }
 
-fun TestCase1() {
-    val tree = BST(10)
-    tree.left = BST(5)
-    tree.left!!.left = BST(2)
-    tree.left!!.left!!.left = BST(1)
-    tree.left!!.right = BST(5)
-    tree.right = BST(15)
-    tree.right!!.right = BST(22)
+open class RightSmallerBST(v: Int, id: Int){
+    var id = id
+    var value = v
+    var left: RightSmallerBST? = null
+    var right: RightSmallerBST? = null
+    var leftCount = 0
+}
 
-    val a = inOrderTraverse(tree, mutableListOf())
-    println(a)
-    val b = preOrderTraverse(tree, mutableListOf())
-    println(b)
-    val c = postOrderTraverse(tree, mutableListOf())
-    println(c)
+fun rightSmallerThan(array: List<Int>): List<Int> {
+    val count = mutableListOf<Int>()
+    if (array.isEmpty()) return listOf()
 
+    var root = RightSmallerBST(array[0], 0)
+    for (i in 1 until array.size){
+        insertToRightSmallBST(root, array[i], i)
+    }
+    for (i in array.indices){
+        count.add(searchSmallCount(root, i))
+    }
+    return count
+}
+
+fun insertToRightSmallBST(node: RightSmallerBST, v: Int, id: Int){
+    if (v < node.value){
+        node.leftCount++
+        if (node.left == null)
+            node.left = RightSmallerBST(v, id)
+        else
+            insertToRightSmallBST(node.left!!, v, id)
+        traverseAdd(node.right, 1)
+    }else{
+        if (node.right == null)
+            node.right = RightSmallerBST(v, id)
+        else
+            insertToRightSmallBST(node.right!!, v, id)
+    }
+}
+
+fun searchSmallCount(node: RightSmallerBST, id: Int): Int{
+    if (node.id == id) return node.leftCount
+    if (node.left == null && node.right == null){
+        return -1
+    }else{
+        if (node.left != null){
+            val leftResult = searchSmallCount(node.left!!, id)
+            if (leftResult >= 0) return leftResult
+        }
+        if (node.right != null){
+            val rightResult = searchSmallCount(node.right!!, id)
+            if (rightResult >= 0) return rightResult
+        }
+        return -1
+    }
+}
+
+fun traverseAdd(node: RightSmallerBST?, v: Int){
+    if (node == null) return
+    node.leftCount += v
+    traverseAdd(node.left, v)
+    traverseAdd(node.right, v)
 }
 
 
+fun rightSmallerThan2(array: List<Int>): List<Int> {
+    val result = mutableListOf<Int>()
+
+    for (i in array.indices){
+        var count = 0
+        for (j in i+1 until array.size){
+            if (array[j] < array[i]) count++
+        }
+        result.add(count)
+    }
+    return result
+}
+
+
+/**
+ * Question 7
+ */
+fun validateThreeNodes(nodeOne: BST, nodeTwo: BST, nodeThree: BST): Boolean {
+    if (isAncestor(nodeOne, nodeTwo.value) && isAncestor(nodeTwo, nodeThree.value)) return true
+    if (isAncestor(nodeThree, nodeTwo.value) && isAncestor(nodeTwo, nodeOne.value)) return true
+    return false
+}
+
+// return true if A is ancestor of B
+fun isAncestor(node: BST?, value: Int): Boolean{
+    var hasValue = false
+    if (node == null) return false
+    if (node.value == value) return true
+    if(isAncestor(node.left, value)) hasValue = true
+    if(isAncestor(node.right, value)) hasValue = true
+    return hasValue
+}
+
+
+/**
+ * Question 6
+ */
+fun sameBsts(arrayOne: List<Int>, arrayTwo: List<Int>): Boolean {
+    if (arrayOne.size != arrayTwo.size) return false
+    if (arrayOne.isEmpty() && arrayTwo.isEmpty()) return true
+    if (arrayOne == arrayTwo) return true
+    if (arrayOne.first() != arrayTwo.first()) return false
+
+    var isSame = true
+    val arrayOneSmall = mutableListOf<Int>()
+    val arrayTwoSmall = mutableListOf<Int>()
+    val arrayOneBig = mutableListOf<Int>()
+    val arrayTwoBig = mutableListOf<Int>()
+
+    for (i in 1 until arrayOne.size){
+        if (arrayOne[i] >= arrayOne.first()){
+            arrayOneBig.add(arrayOne[i])
+        }else{
+            arrayOneSmall.add(arrayOne[i])
+        }
+        if(arrayTwo[i] >= arrayTwo.first()){
+            arrayTwoBig.add(arrayTwo[i])
+        }else{
+            arrayTwoSmall.add(arrayTwo[i])
+        }
+    }
+
+
+    if (!sameBsts(arrayOneBig, arrayTwoBig)) isSame = false
+    if (!sameBsts(arrayOneSmall, arrayTwoSmall)) isSame = false
+    return isSame
+}
+
+//fun sameBstHelper(arrayOne: List<Int>, arrayTwo: List<Int>): Boolean{
+//
+//}
+
+/**
+ * Question 5
+ */
+fun reconstructBst(preOrderTraversalValues: List<Int>): BST? {
+    val root = BST(preOrderTraversalValues[0])
+    reconstructHelper(root, preOrderTraversalValues)
+    return root
+}
+
+fun reconstructHelper(node: BST, list: List<Int>){
+    val leftList = mutableListOf<Int>()
+    val rightList = mutableListOf<Int>()
+    if (list.isEmpty()) return
+
+    for (i in 1 until list.size){
+        if (list[i] >= node.value){
+            rightList.add(list[i])
+        }else{
+            leftList.add(list[i])
+        }
+    }
+    node.value = list[0]
+    if (leftList.isNotEmpty()) {
+        node.left = BST(leftList[0])
+        reconstructHelper(node.left!!, leftList)
+    }
+    if (rightList.isNotEmpty()) {
+        node.right = BST(rightList[0])
+        reconstructHelper(node.right!!, rightList)
+    }
+}
+
+
+/**
+ * Question 4
+ */
+fun findKthLargestValueInBst(tree: BST, k: Int): Int {
+    val list = mutableListOf<Int>()
+    kthLargestValueHelper(tree, k, list)
+    println(list)
+    return list.last()
+}
+
+fun kthLargestValueHelper(tree: BST?, k: Int, list: MutableList<Int>): Boolean{
+    if (tree != null){
+        if(kthLargestValueHelper(tree.right, k, list)) return true
+        list.add(tree.value)
+        if (list.size == k) return true
+        if(kthLargestValueHelper(tree.left, k, list)) return true
+    }
+    return false
+}
+
+
+/**
+ * Question 4
+ */
+fun minHeightBst(array: List<Int>): BST {
+    val size = array.size
+    val index = getMediumIndex(size)
+    val tree = BST(array[index])
+    minHeightBstHelper(tree, array.subList(0, index))
+    minHeightBstHelper(tree, array.subList(index + 1, size))
+    return tree
+}
+
+fun minHeightBstHelper(tree: BST, array: List<Int>){
+    val size = array.size
+    if (size == 0) return
+    val index = getMediumIndex(size)
+    tree.insert(array[index])
+    minHeightBstHelper(tree, array.subList(0, index))
+    minHeightBstHelper(tree, array.subList(index + 1, size))
+}
+
+fun getMediumIndex(size: Int): Int{
+    if (size == 1) return 0
+    return if (size%2 == 0){
+        size/2
+    }else{
+        (size-1)/2
+    }
+}
 
 /**
  * Question 3
