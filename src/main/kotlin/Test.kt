@@ -1,10 +1,13 @@
 import java.util.*
 import java.util.LinkedList
+import java.util.function.Consumer
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
 fun main(){
-    testCaseOne()
+//    testCaseOne()
+//    testCaseTwo()
+    testCaseThree()
 }
 
 fun testCaseOne(){
@@ -27,13 +30,7 @@ fun testCaseOne(){
     hashMap["Norway"] = "Oslo";
     hashMap["USA"] = "Washington DC";
 
-    while (itList.hasNext()){
-        println(itList.next())
-    }
-//    println(itLink.next())
-
-
-
+    listOne.forEach { n -> println(n) }
 }
 
 fun testCaseTwo(){
@@ -55,17 +52,50 @@ fun testCaseTwo(){
 
 
 fun testCaseThree(){
+    val concurrencyTest = ConcurrencyTest()
+//    concurrencyTest.start()
+//    concurrencyTest.addition()
+    val arrayList = ArrayList<Int>(5)
+    arrayList.add(1)
+    arrayList.add(2)
+
+    val method = Consumer { n: Int? -> println(n) }
+    val upperCase = {str: String -> str.toUpperCase()}
+    val addition = {n1: Int, n2: Int -> n1 + n2}
+    println(upperCase("aaa"))
+    println(upperCase)
+    println(addition(1,2))
 
 }
 
+fun testCaseFour(){
+    var count = 0
+
+}
+
+
+
+
+
+
+
+
+
 class ConcurrencyTest(): Thread(){
     var amount = 0
-    val thread = ConcurrencyTest()
+    fun addition(){
+        for (i in 1..10){
+            amount++
+            println("Thread 1: $amount")
+        }
+    }
 
     override fun run() {
         super.run()
-        amount++
-        println("Thread 2: $amount")
+        for (i in 1..10){
+            amount++
+            println("Thread 2: $amount")
+        }
     }
 }
 
@@ -76,7 +106,7 @@ class Main : Thread() {
     companion object {
         var amount = 0
         @JvmStatic
-        fun main(args: Array<String>) {
+        fun main() {
             val thread = Main()
             thread.start()
             // Wait for the thread to finish
@@ -108,6 +138,10 @@ class Mazda: Vehicle(){
     }
 }
 
+
+interface lambdaTest{
+    fun doSomething(p1: Int)
+}
 enum class Level{
     LOW, MEDIUM, HIGH
 }

@@ -15,8 +15,12 @@ fun testCase() {
 
 
 
-
-
+/**
+ * Question 6
+ */
+fun staircaseTraversal(height: Int, maxSteps: Int): Int {
+    return -1
+}
 
 
 
