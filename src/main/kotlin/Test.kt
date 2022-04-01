@@ -127,6 +127,12 @@ abstract class Vehicle(){
     }
 }
 
+open class Parent(){
+}
+
+class Child: Parent(){
+}
+
 class Mazda: Vehicle(){
     override fun run() {
         println("Mazda run...")

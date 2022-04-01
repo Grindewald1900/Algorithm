@@ -53,21 +53,28 @@ fun getNodesInArray(linkedList: LinkedList?): List<Int> {
 
 
 /** Question-3 **/
+
+open class LinkedList(value: Int) {
+    var value = value
+    var next: LinkedList? = null
+}
+
+class FullLinkedList(value: Int){
+    var value = value
+    var prev: FullLinkedList? = null
+    var next: FullLinkedList? = null
+}
+
+
 fun removeKthNodeFromEnd(head: LinkedList, k: Int) {
     var node = head
     var count = 1
     while (node.next != null){
-        node = node.next!!
-        count ++
-    }
-    node = head
-    for (i in 1 .. count - k){
-        node = node.next!!
-    }
-    if (node.next != null){
-        
+
     }
 }
+
+
 
 /** Question-2 **/
 class Node(value: Int) {
@@ -182,12 +189,6 @@ class DoublyLinkedList {
 }
 
 
-/** Question-1 **/
-// This is an input class. Do not edit.
-open class LinkedList(value: Int) {
-    var value = value
-    var next: LinkedList? = null
-}
 
 fun removeDuplicatesFromLinkedList(linkedList: LinkedList): LinkedList {
     if (linkedList.next == null) return linkedList
